@@ -1,0 +1,68 @@
+<html>
+<style type="text/css">
+
+.green {
+	color: #80FF00;
+}
+
+.BLUE {
+	color: #00F;
+}
+</style>
+
+<body background="Untitled-1.jpg" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<script>
+function validateForm() {
+    var x = document.forms["myform"]["user"].value;
+	 var y = document.forms["myform"]["pass"].value;
+    if ((x == "romeo" && y=="mylover") || (x == "juliet" && y=="mylover")) {
+        
+        return true;}
+		else{
+		alert("Invalid login");
+		return false;
+		
+    }
+}
+</script>
+<div>
+
+
+<form name="myform" action="test.php" method="post" onsubmit="return validateForm()">
+  <table width="441" height="429" border="3">
+    <label></label>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <tr>
+    
+      <td><div align="center">
+        <h2><span class="BLUE"><strong>LOGIN</strong></span><strong><br>
+          <br>
+          </strong>
+        </h2>
+      </div>
+        <h3><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span class="green">USERNAME:
+          </span>
+            <input name="user" type="text" id="user" required>
+        </strong></h3>
+        <p>&nbsp;</p>
+        <h3 align="left"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span class="green">PASSWORD:  </span>
+            <input type="password" name="pass" id="pass" required>
+        </strong></h3>
+        <p>&nbsp;</p>
+        <p> <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;
+          &nbsp;&nbsp;
+          <input type="submit" name="submit" id="submit" value="Submit"  >
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="reset" name="Reset" id="Reset" value="Reset">
+      </p></td>
+    </tr>
+  </table>
+</div>
+></form>
+</body>
+</html>
